@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Tracking</title>
+</head>
+<body>
+    <h1>Phone Number Tracking</h1>
+    
+    <!-- Input form for phone number -->
+    <form action="/track" method="GET">
+        <label for="number">Enter phone number:</label>
+        <input type="text" id="number" name="number" placeholder="Enter phone number">
+        <button type="submit">Track</button>
+    </form>
+
+    <!-- Display the phone number and location if provided -->
+    <p>The phone number you are tracking is: <strong>{number}</strong></p>
+    <p>Approximate Location: <strong>{location}</strong></p>
+</body>
+</html>
